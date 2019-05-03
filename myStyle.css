@@ -1,0 +1,82 @@
+body, *, html {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #333;
+}
+
+#zad {
+	padding: 20px;
+	border: 2px solid #aaa;
+	border-radius: 10px;
+	width: 40%;
+	height: 20%;
+	top: 40%;
+	left: 30%;
+	position: absolute;
+	font-weight: bold;
+	color: #eee;
+	line-height: 5em;
+	font-size: 1.8vw;
+	text-align: center;
+	background-color: #555;
+}
+#zad2 {
+	padding: 10px;
+	border: 2px solid #aaa;
+	border-radius: 5px;
+	font-weight: bold;
+	color: #eee;
+	font-size: 1.4vw;
+	text-align: center;
+	background-color: #555;
+}
+button {
+	cursor: pointer;
+}
+p#otg {
+	padding: 10px;
+	border: 2px solid #aaa;
+	border-radius: 5px;
+	font-weight: bold;
+	color: #eee;
+	font-size: 1.4vw;
+	text-align: center;
+	background-color: #555;
+	left: 40%;
+	position: absolute;
+	top: 80%;
+	display: none;
+}
+p#otg2 {
+	padding: 10px;
+	border: 2px solid #aaa;
+	border-radius: 5px;
+	font-weight: bold;
+	color: #eee;
+	font-size: 1.4vw;
+	text-align: center;
+	background-color: #555;
+	left: 30%;
+	position: absolute;
+	top: 85%;
+	display: none;
+}
+#zad6 {
+	padding: 20px;
+	border: 2px solid #aaa;
+	border-radius: 10px;
+	width: 40%;
+	height: 60%;
+	top: 20%;
+	left: 30%;
+	position: absolute;
+	font-weight: bold;
+	color: #eee;
+	line-height: 1.5em;
+	font-size: 1.5vw;
+	text-align: center;
+	background-color: #555;
+	overflow: hidden;
+}

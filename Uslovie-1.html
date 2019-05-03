@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Условие 1</title>
+	<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+function myFunction() {
+	if(document.getElementById("q1").value == document.getElementById("a1").value && 
+	document.getElementById("q2").value == document.getElementById("a2").value && 
+	document.getElementById("q3").value == document.getElementById("a3").value && 
+	document.getElementById("q4").value == document.getElementById("a4").value){
+		document.getElementById("res").innerHTML="Правилен отговор !".fontcolor("#00AA05").fontsize(6);
+	}else {
+		document.getElementById("res").innerHTML="Грешен отговор !".fontcolor("red").fontsize(6);
+		}
+}
+</script>
+<style type="text/css">
+	a {
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 2vw;
+		color: red;
+	}
+</style>
+</head>
+<body style="background-color: #333;">
+<a href="Uslovie-2.html">Условие 2</a><br />
+<a href="Uslovie-3.html">Условие 3</a><br />
+<a href="Uslovie-4.html">Условие 4</a><br />
+<a href="Uslovie-5.html">Условие 5</a><br />
+<a href="Uslovie-6.html">Условие 6</a>
+	<div style="padding: 20px;padding: 20px;border: 2px solid #aaa;border-radius: 10px;width: 40%;height: 60%;top: 20%;left: 30%;
+	position: absolute;font-weight: bold;color: #eee;line-height: 1.5em;font-size: 1.5vw;text-align: center;background-color: #555;
+	overflow: hidden;">
+		<p>Подредете следните думи в правилен ред, като ги довлачите до съответната клетка.</p>
+		<span id="a3" draggable="true" ondragstart="drag(event)">Markup </span>
+		<span id="a2" draggable="true" ondragstart="drag(event)">Text </span>
+		<span id="a4" draggable="true" ondragstart="drag(event)">Language </span>
+		<span id="a1" draggable="true" ondragstart="drag(event)">Hyper </span>
+		<br><br>
+		<div id="q1" ondrop="drop(event)" ondragover="allowDrop(event) " 
+		style="display: inline; padding-top: 1px; padding-bottom: 1	px; padding-left: 30px; padding-right: 30px;
+		background-color:#555; height: 18px; width: 500px; border: 1px solid black; text-align: center;"></div>
+		
+		<div id="q2" ondrop="drop(event)" ondragover="allowDrop(event) " 
+		style="display: inline; padding-top: 1px; padding-bottom: 1	px; padding-left: 30px; padding-right: 30px;
+		background-color:#555; height: 18px; width: 500px; border: 1px solid black; text-align: center;"></div>
+		
+		<div id="q3" ondrop="drop(event)" ondragover="allowDrop(event)" 
+		style="display: inline; padding-top: 1px; padding-bottom: 1	px; padding-left: 30px; padding-right: 30px;
+		background-color:#555; height: 18px; width: 500px; border: 1px solid black; text-align: center;"></div>
+		
+		<div id="q4" ondrop="drop(event)" ondragover="allowDrop(event)" 
+		style="display: inline; padding-top: 1px; padding-bottom: 1	px; padding-left: 30px; padding-right: 30px;
+		background-color:#555; height: 18px; width: 500px; border: 1px solid black; text-align: center;"></div>
+		
+		<button style="display: block; " onClick="myFunction()">Проверка</button>
+		<p id="res"></p>
+			
+	</div>
+</body>
+</html>

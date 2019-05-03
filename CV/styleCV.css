@@ -1,0 +1,274 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#header {
+	position: absolute;
+	top: 10%;
+	right: 72.5%;
+	font-weight: bold;
+	font-size: 1.8vw;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+	text-align: right;
+	line-height: 30px;
+	font-family: corbel;
+}
+#Razdelitel {
+	height: 365%;
+	width: 2px;
+	color: black;
+	background-color: black;
+	position: absolute;
+	left: 30%;
+	top: 10%;
+}
+#flag {
+	width: 50px;
+	height: 35px;
+	position: absolute;
+	right: 72.5%;
+	top: 26%;
+}
+#lichnaInformaciq {
+	font-size: 1.5vw;
+	font-weight: bold;
+	word-spacing: 3px;
+	text-align: right;
+	font-family: corbel;
+	right: 72.5%;
+	top: 35%;
+	position: absolute;
+}
+#danni {
+	font-size: 1.3vw;
+	position: absolute;
+	right: 72.5%;
+	top: 43%;
+	line-height: 1.7em;
+	text-align: right;
+}
+#trudovStaj {
+	font-family: corbel;
+	font-size: 1.5vw;
+	font-weight: bold;
+	text-align: right;
+	position: absolute;
+	top: 82%;
+	right: 72.5%;
+}
+#bullets {
+	position: absolute;
+	right: 72.5%;
+	top: 88%;
+	line-height: 25px;
+	font-family: corbel;
+	font-size: 1.2vw;
+	text-align: right;
+}
+#obrazovanie {
+	font-family: corbel;
+	font-size: 1.5vw;
+	font-weight: bold;
+	text-align: right;
+	position: absolute;
+	top: 119%;
+	right: 72.5%;
+}
+#bullets2 {
+	position: absolute;
+	right: 72.5%;
+	top: 125%;
+	line-height: 25px;
+	font-family: corbel;
+	font-size: 1.2vw;
+	text-align: right;
+}
+#umeniq {
+	font-family: corbel;
+	font-size: 1.5vw;
+	font-weight: bold;
+	text-align: right;
+	position: absolute;
+	top: 170%;
+	right: 72.5%;
+}
+#umeniqText {
+	font-size: 1.1vw;
+	position: absolute;
+	right: 72.5%;
+	top: 174%;
+	line-height: 1.3em;
+	text-align: right;
+}
+#ezici {
+	font-family: corbel;
+	font-size: 1.5vw;
+	text-align: right;
+	position: absolute;
+	right: 72.5%;
+	top: 190%;
+	line-height: 2em;
+}
+#bullets3 {
+	position: absolute;
+	right: 72.5%;
+	top: 207%;
+	line-height: 25px;
+	font-family: corbel;
+	font-size: 1.2vw;
+	text-align: right;
+}
+#socialni {
+	font-family: corbel;
+	font-size: 1.4vw;
+	text-align: right;
+	position: absolute;
+	top: 224%;
+	right: 72.5%;
+}
+#socialniText {
+	font-size: 1.1vw;
+	position: absolute;
+	right: 72.5%;
+	top: 232%;
+	line-height: 1.3em;
+	text-align: right;
+}
+#organisation {
+	font-family: corbel;
+	font-size: 1.4vw;
+	text-align: right;
+	position: absolute;
+	top: 254%;
+	right: 72.5%;
+}
+#organisationText {
+	font-size: 1.1vw;
+	position: absolute;
+	right: 72.5%;
+	top: 262%;
+	line-height: 1.3em;
+	text-align: right;
+}
+#tech {
+	font-family: corbel;
+	font-size: 1.4vw;
+	text-align: right;
+	position: absolute;
+	top: 284%;
+	right: 72.5%;
+}
+#techText {
+	font-size: 1.1vw;
+	position: absolute;
+	right: 72.5%;
+	top: 292%;
+	line-height: 1.3em;
+	text-align: right;
+}
+#art {
+	font-family: corbel;
+	font-size: 1.4vw;
+	text-align: right;
+	position: absolute;
+	top: 304%;
+	right: 72.5%;
+}
+#artText {
+	font-size: 1.1vw;
+	position: absolute;
+	right: 72.5%;
+	top: 312%;
+	line-height: 1.3em;
+	text-align: right;
+}
+#other {
+	font-family: corbel;
+	font-size: 1.4vw;
+	text-align: right;
+	position: absolute;
+	top: 324%;
+	right: 72.5%;
+}
+#otherText {
+	font-size: 1.1vw;
+	position: absolute;
+	right: 72.5%;
+	top: 328%;
+	line-height: 1.3em;
+	text-align: right;
+}
+#MPS {
+	font-family: corbel;
+	font-size: 1.4vw;
+	text-align: right;
+	position: absolute;
+	top: 340%;
+	right: 72.5%;
+}
+#Addition {
+	font-family: corbel;
+	font-size: 1.5vw;
+	font-weight: bold;
+	text-align: right;
+	position: absolute;
+	top: 352%;
+	right: 72.5%;
+}
+#Prilojenie {
+	font-family: corbel;
+	font-size: 1.5vw;
+	font-weight: bold;
+	text-align: right;
+	position: absolute;
+	top: 360%;
+	right: 72.5%;
+}
+.total {
+	font-family: corbel;
+	font-size: 1.2vw;
+	position: absolute;
+	text-align: left;
+	left: 34%;
+}
+.name {
+	top: 44%;
+	font-weight: bold;
+}
+.adres {
+	top: 48.5%;
+}
+.telefon {
+	font-family: arial;
+	top: 53%;
+}
+.email {
+	top: 62%;
+}
+.nacionalnost {
+	top: 71.5%;
+}
+.rojdennaData {
+	top: 76%;
+}
+.ezik1 {
+	top: 192%;
+}
+.ezik2 {
+	top: 198%;
+}
+.nivo1 {
+	top: 207%;
+}
+.nivo2 {
+	top: 210%;
+}
+.nivo3 {
+	top: 213%;
+}

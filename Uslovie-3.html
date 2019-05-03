@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Условие 3</title>
+	<style type="text/css">
+	a {
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 2vw;
+		color: red;
+	}
+</style>
+</head>
+<body style="background-color: #333;">
+<a href="Uslovie-1.html">Условие 1</a><br />
+<a href="Uslovie-2.html">Условие 2</a><br />
+<a href="Uslovie-4.html">Условие 4</a><br />
+<a href="Uslovie-5.html">Условие 5</a><br />
+<a href="Uslovie-6.html">Условие 6</a>
+	<div style="padding: 20px;border: 2px solid #aaa;border-radius: 10px;width: 40%;height: 80%;top: 10%;left: 30%;
+	position: absolute;font-weight: bold;color: #eee;line-height: 1.5em;font-size: 1.5vw;text-align: center;background-color: #555;
+	overflow: hidden;">
+		<p>Намерете зеления правоъгълник във фигурата.</p>
+		<svg width="580" height="300" style="border:1px solid #000000; background-color:#C1C1C1;">
+			<polygon onclick="getElementById('demo').innerHTML='Грешен отговор !'.fontcolor('red').fontsize(6)"
+			points="180,130 420,130 300,60" style="fill:#B53B26; cursor:pointer;"/>
+			
+			<rect onclick="getElementById('demo').innerHTML='Грешен отговор !'.fontcolor('red').fontsize(6)"
+			x="225" y="130" width="150" height="150" style="fill:#FFC654; cursor:pointer;"/>
+			
+			<circle onclick="getElementById('demo').innerHTML='Грешен отговор !'.fontcolor('red').fontsize(6)"
+			cx="263" cy="165" r="21"  style="fill:#87CEEB; cursor:pointer;"/>
+			
+			<circle onclick="getElementById('demo').innerHTML='Грешен отговор !'.fontcolor('red').fontsize(6)"
+			cx="338" cy="165" r="21"  style="fill:#87CEEB; cursor:pointer;"/>
+			
+			<rect onclick="getElementById('demo').innerHTML='Правилен отговор !'.fontcolor('#00AA05').fontsize(6)"
+			x="282" y="208" width="36" height="72" style="fill:#7CAA57; cursor:pointer;"/>
+		</svg>
+		<p id="demo"></p>
+		
+		
+	</div>
+</body>
+</html>

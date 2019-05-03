@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Иберете верния отговор</title>
+	<script type="text/javascript">
+		function wrongAnswer(){
+			document.getElementById('aa').innerHTML = "Грешен отговор!";
+			document.getElementsByClassName('greshno')[0].style.border="2px solid red";
+		}
+		function wrongAnswer2(){
+			document.getElementById('aa').innerHTML = "Грешен отговор!";
+			document.getElementsByClassName('greshno2')[0].style.border="2px solid red";
+		}
+
+
+		function correctAnswer(){
+			document.getElementById('aa').innerHTML = "Правилен отговор!";
+			document.getElementsByClassName('vqrno')[0].style.border="2px solid green";
+		}
+
+
+	</script>
+	<meta charset="utf-8">
+	<style type="text/css">
+	a {
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 2vw;
+		color: red;
+	}
+</style>
+</head>
+<body style="background-color: lightgreen">
+<a href="Uslovie-1.html">Условие 1</a><br />
+<a href="Uslovie-2.html">Условие 2</a><br />
+<a href="Uslovie-3.html">Условие 3</a><br />
+<a href="Uslovie-4.html">Условие 4</a><br />
+<a href="Uslovie-6.html">Условие 6</a>
+<p style="text-align: center;">Кое от посочените животни е бозайник?</p><br>
+<div   onclick="wrongAnswer()" class="wa" style="display: inline-block; height: 169px;width: 113px; position: absolute;
+left: 25%;">
+	<img class="greshno" style="height: 180px;width: 150px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Adler_jagt.jpg">
+</div>
+
+<div onclick="correctAnswer()" class="wa"  style="  display: inline-block; height: 169px;width: 113px; position: absolute;
+left: 45%;">
+	<img class="vqrno" style="height: 180px;width: 150px;" src="https://s-media-cache-ak0.pinimg.com/736x/78/b4/f8/78b4f865a46a2a4cdce4a621da87d538.jpg">
+</div>
+
+<div onclick="wrongAnswer2()" class="wa" style="display: inline-block; height: 169px;width: 113px; position: absolute;
+left: 65%;">
+	<img class="greshno2" style="height: 180px;width: 150px;" src="http://www.livescience.com/images/i/000/061/056/original/great-white.jpg?interpolation=lanczos-none&fit=inside%7C660:*">
+</div>
+ 
+ <br>
+ <p id="aa" style="text-align: center; position: absolute;left: 46%; top: 40%; "></p>
+
+
+</body>
+</html>

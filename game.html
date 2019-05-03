@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+#div1, #div2, #div3,#div4,#div5,#div6,#div7,#div8,#div9,#div10,#div11,#div12,#div13,#div14,#div15,#div16 {
+    float: left;
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    display: inline-block;
+
+}
+#container {
+  padding: 10px;
+  position: absolute;
+  width: auto;
+  display: inline-block;
+  border: 2px solid #333;
+  top: 35%;
+  left: 30%;
+}
+#bg {
+  background: radial-gradient(circle, rgb(140,140,140) 30%, rgb(50,50,50) 100%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+</style>
+<script>
+
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+function asd(){
+window.setInterval(function (){
+  var p1 = document.getElementById('div1');
+  var c1 = document.getElementById('drag1');
+
+  var p2 = document.getElementById('div2');
+  var c2 = document.getElementById('drag2');
+
+  var p3 = document.getElementById('div3');
+  var c3 = document.getElementById('drag3');
+
+  var p4 = document.getElementById('div4');
+  var c4 = document.getElementById('drag4');
+
+  var p5 = document.getElementById('div5');
+  var c5 = document.getElementById('drag5');
+
+  var p6 = document.getElementById('div6');
+  var c6 = document.getElementById('drag6');
+
+  var p7 = document.getElementById('div7');
+  var c7 = document.getElementById('drag7');
+
+  var p8 = document.getElementById('div8');
+  var c8 = document.getElementById('drag8');
+
+  var p9 = document.getElementById('div9');
+  var c9 = document.getElementById('drag9');
+
+  var p10 = document.getElementById('div10');
+  var c10 = document.getElementById('drag10');
+
+  var p11 = document.getElementById('div11');
+  var c11 = document.getElementById('drag11');
+
+  var p12 = document.getElementById('div12');
+  var c12 = document.getElementById('drag12');
+
+  var p13 = document.getElementById('div13');
+  var c13 = document.getElementById('drag13');
+
+  var p14 = document.getElementById('div14');
+  var c14 = document.getElementById('drag14');
+
+  var p15 = document.getElementById('div15');
+  var c15 = document.getElementById('drag15');
+
+
+  if (p1.contains(c1)) {
+    p1.style.border = "2px solid green";
+  } else { p1.style.border = "2px solid red"; }
+  if (p2.contains(c2)) {
+    p2.style.border = "2px solid green";
+  } else { p2.style.border = "2px solid red"; }
+  if (p3.contains(c3)) {
+    p3.style.border = "2px solid green";
+  } else { p3.style.border = "2px solid red"; }
+  if (p4.contains(c4)) {
+    p4.style.border = "2px solid green";
+  } else { p4.style.border = "2px solid red"; }
+  if (p5.contains(c5)) {
+    p5.style.border = "2px solid green";
+  } else { p5.style.border = "2px solid red"; }
+  if (p6.contains(c6)) {
+    p6.style.border = "2px solid green";
+  } else { p6.style.border = "2px solid red"; }
+  if (p7.contains(c7)) {
+    p7.style.border = "2px solid green";
+  } else { p7.style.border = "2px solid red"; }
+  if (p8.contains(c8)) {
+    p8.style.border = "2px solid green";
+  } else { p8.style.border = "2px solid red"; }
+  if (p9.contains(c9)) {
+    p9.style.border = "2px solid green";
+  } else { p9.style.border = "2px solid red"; }
+  if (p10.contains(c10)) {
+    p10.style.border = "2px solid green";
+  } else { p10.style.border = "2px solid red"; }
+  if (p11.contains(c11)) {
+    p11.style.border = "2px solid green";
+  } else { p11.style.border = "2px solid red"; }
+  if (p12.contains(c12)) {
+    p12.style.border = "2px solid green";
+  } else { p12.style.border = "2px solid red"; }
+  if (p13.contains(c13)) {
+    p13.style.border = "2px solid green";
+  } else { p13.style.border = "2px solid red"; }
+  if (p14.contains(c14)) {
+    p14.style.border = "2px solid green";
+  } else { p14.style.border = "2px solid red"; }
+  if (p15.contains(c15)) {
+    p15.style.border = "2px solid green";
+  } else { p15.style.border = "2px solid red"; }
+
+
+}, 10);
+}
+</script>
+</head>
+<body onload="asd();">
+
+<div id="bg"><p style="font-weight: bold; text-align: center; font-size: 2vw; color: #222;">Подредете числата от 1 до 15 в правилния ред(от ляво надясно).<br /> Ако всичките рамки са със зелен цвят вие печелите. <br /> Успех! :)</p></div>
+
+
+<div id="container">
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="numbers/4.jpg" draggable="true" ondragstart="drag(event)" id="drag4" width="88" height="31">
+</div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="numbers/14.jpg" draggable="true" ondragstart="drag(event)" id="drag14" width="88" height="31">
+</div>
+<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="numbers/2.jpg" draggable="true" ondragstart="drag(event)" id="drag2" width="88" height="31">
+</div>
+<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="numbers/1.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+</div><br>
+<div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="numbers/9.jpg" draggable="true" ondragstart="drag(event)" id="drag9" width="88" height="31">
+</div>
+<div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="numbers/11.jpg" draggable="true" ondragstart="drag(event)" id="drag11" width="88" height="31">
+</div>
+<div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="numbers/12.jpg" draggable="true" ondragstart="drag(event)" id="drag12" width="88" height="31">
+</div>
+<div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="numbers/5.jpg" draggable="true" ondragstart="drag(event)" id="drag5" width="88" height="31">
+</div><br>
+<div id="div9" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="numbers/10.jpg" draggable="true" ondragstart="drag(event)" id="drag10" width="88" height="31">
+</div>
+<div id="div10" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="numbers/15.jpg" draggable="true" ondragstart="drag(event)" id="drag15" width="88" height="31">
+</div>
+<div id="div11" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="numbers/7.jpg" draggable="true" ondragstart="drag(event)" id="drag7" width="88" height="31">
+</div>
+<div id="div12" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="numbers/13.jpg" draggable="true" ondragstart="drag(event)" id="drag13" width="88" height="31">
+</div><br>
+<div id="div13" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="numbers/6.jpg" draggable="true" ondragstart="drag(event)" id="drag6" width="88" height="31">
+</div>
+<div id="div14" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="numbers/8.jpg" draggable="true" ondragstart="drag(event)" id="drag8" width="88" height="31">
+</div>
+<div id="div15" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="numbers/3.jpg" draggable="true" ondragstart="drag(event)" id="drag3" width="88" height="31">
+</div>
+<div id="div16" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Попълнете текста със съответните думи.</title>
+    <script type="text/javascript">
+    	function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+    </script>
+    <meta charset="utf-8">
+<style type="text/css">
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 2vw;
+        color: red;
+    }
+</style>
+</head>
+<body style="background-color: lightblue">
+<a href="Uslovie-1.html">Условие 1</a><br />
+<a href="Uslovie-3.html">Условие 3</a><br />
+<a href="Uslovie-4.html">Условие 4</a><br />
+<a href="Uslovie-5.html">Условие 5</a><br />
+<a href="Uslovie-6.html">Условие 6</a>
+<div>
+HTML може да прикрепя скриптове писани на езици като  
+
+<div style="display: inline-block; height: 10px;
+ width: 80px;" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" ></div> 
+
+ , което променя поведението на уеб страницата. Може да се използва 
+
+<div style="display: inline-block; height: 10px;
+ width: 200px;" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" ></div> 
+
+, който определя изгледа и оформлението на текста и други материали. 
+
+<div style="display: inline-block; height: 10px;
+ width: 250px;" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" ></div> 
+
+поддържа и двете CSS и HTML и насърчава използването на CSS в HTML страниците от 1997. Това допринася за разделяне съдържанието и структурата на уеб страниците от тяхното визуално представяне.
+<br>
+<br>
+
+		<span style="color: red" id="drag2" draggable="true" ondragstart="drag(event)">JavaScript </span><br><br>
+		<span style="color: darkblue" id="drag3" draggable="true" ondragstart="drag(event)">Cascading Style Sheets (CSS) </span><br><br>
+		<span style="color: green" id="drag4" draggable="true" ondragstart="drag(event)"> World Wide Web Consortium (W3C) </span>
+</div>
+</body>
+</html>

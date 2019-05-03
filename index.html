@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Външен CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/Animate.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/JScript.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/wow.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<!-- Вътрешен CSS -->
+	<style type="text/css">
+		#news {
+			width: 20vw;
+			height: 40vh;
+			position: fixed;
+			top: 30%;
+			left: -18%;
+			background-color: rgb(80, 45, 25);
+			border: 2px solid rgb(50, 30, 20);
+			border-radius: 15px;
+			z-index: 998;
+			font-size: 1.2vw;
+			font-family: 'Comfortaa', corbel;
+			font-weight: bold;
+			padding: 1px 3px;
+			color: #bbb;
+		}
+		#newsArrow {
+			position: absolute;
+			right: 1%;
+			top: 40%;
+			height: 20%;
+			width: 10%;
+			cursor: pointer;
+		}
+		#newsArrow2 {
+			position: absolute;
+			right: 1%;
+			top: 40%;
+			height: 20%;
+			width: 10%;
+			display: none;
+			cursor: pointer;
+		}
+		#promoID {
+			margin-top: 5%;
+			margin-left: 15%;
+		}
+	</style>
+	<title>
+		R.Williams
+	</title>
+	<script>
+	$(document).ready(function (){
+            $("#arrow").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#here").offset().top
+                }, 1500);
+            });
+            $("#infoL").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#here").offset().top
+                }, 1500);
+            });
+            $("#productsL").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#here2").offset().top
+                }, 1500);
+            });
+            $("#orderL").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#here3").offset().top
+                }, 1500);
+            });
+            $("#opinionsL").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#here4").offset().top
+                }, 1500);
+            });
+            $("#raise").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#beginning").offset().top
+                }, 1000);
+            });
+            $("#zaglavie").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#beginning").offset().top
+                }, 1000);
+            });
+            $("#leaver").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#here3").offset().top
+                }, 1500);
+            });
+        });
+	</script>
+</head>
+<body onload="showPromo();">
+<div class="promotionBox">
+	<div class="ex" onclick="hidePromo();">
+		Close
+	</div>
+	<div class="promoEffect" 
+	onmouseover="changeToGoToPromo();"
+	onmouseout="changeToPromo();">
+		<img src="images/backgrounds/catalogue3.jpg">
+		<h2 id="leaver" onclick="clearPromo();">промоция</h2>
+		<div class="promoOverlay">
+			<h3>Блейзър</h3>
+			<p>	Нова цена: 29,99 лв. </p>
+		</div>
+	</div>
+</div>
+<div id="ad">
+	<div id="adX" onclick="hideAD();">X</div>
+	<a href="http://www.emcmarketing.com/images/ad_rates/samples/bcha-buyers-guide/1-2-vertical.jpg" target="_blank">
+		<img class="adImage" src="images/ad/ad.jpg" />
+	</a>
+</div>
+<div id="news">
+	<div id="promoID">
+		НОВИНИ
+		<br /><br />
+		Промоция <br />
+		До 31.10.16 доставка <br />
+		до цялата страна е <br />
+		БЕЗПЛАТНА!
+	</div>
+	<img src="images/backgrounds/arrowOut.png" id="newsArrow" onclick="showNewss();">
+	<img src="images/backgrounds/arrowIn.png" id="newsArrow2" onclick="hideNewss();">
+</div>
+
+<div id="lightBoxCV" onclick="lightBoxHide();">
+	<iframe src="CV/CV.html" id="CVframe"></iframe>
+</div>
+<div id="lightBoxMovie" onclick="lightBoxHide();">
+	<iframe src="https://www.youtube.com/embed/4kmA86_hnbo" id="MovieFrame"></iframe>
+	<img src="http://static.tumblr.com/1758da10512f16a37a9890a3c53ac1d6/owlmg3t/YAMnl7pyh/tumblr_static_7g3tfrbtiko440skw08og404w.jpg" id="supernaturalImg">
+</div>
+<div id="lightBoxSong" onclick="lightBoxHide();">
+	<iframe src="https://www.youtube.com/embed/RkNVWdYxyn0" id="SongFrame"></iframe>
+</div>
+<div id="lightBoxSite" onclick="lightBoxHide();">
+	<object data="https://www.w3schools.com/" id="SiteFrame"></object>
+</div>
+<div id="lightBoxExercise" onclick="lightBoxHide();">
+	<canvas id="myCanvas" width="300" height="150" style="border: 2px solid white;">Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+<div id="beginning"></div>
+
+<div id="containerLayer1">
+	<div id="navbar">
+		<div id="zaglavie">R.Williams</div>
+		<img src="images/backgrounds/logo.png" id="logoPng">
+		<ul id="buttons">
+			<!-- Вграден / Инлайн(inline) CSS -->
+			<li id="infoL" style="border-left-width: 0;">За фирмата</li>
+			<li id="productsL">Продукти</li>
+			<li id="orderL">Поръчка</li>
+			<li id="opinionsL">Мнения</li>
+			<li id="cvL" >
+			 <div class="dropdown">
+			  <button class="dropbtn">За собственика</button>
+				 		<div class="dropdown-content">
+			  	 		<a href="#" onclick="lightBoxShow();"> &rarr; CV
+			  	 		</a>
+			  		  <a href="#" onclick="lightBoxMovieShow();">&rarr; Любим филм</a>
+			  		  <a href="#" onclick="lightBoxExerciseShow();">&rarr; Любима задача</a>
+			  		  <a href="#" onclick="lightBoxSongShow();">&rarr; Любима песен</a>
+			  		  <a href="#" onclick="lightBoxSiteShow();">&rarr; Любим сайт</a>
+				  	</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="container">
+		<div id="heady">
+			R.Williams
+		</div>
+		<img src="images/backgrounds/downarrow.gif" id="arrow">
+		<div id="dailyFashion">
+		Daily Fashion
+		</div>
+	</div>
+	<img src="images/backgrounds/3.jpg" id="bgimg">
+</div>
+
+<div id="info">
+	<div id="here"></div>
+	<div id="textboxInfo"> Тази фирма няма реална работна дейност. <br /> Личен проект на Христо Николаев Зафиров. <br /> Уеб сайтът е създаден с цел лично портфолио и домашна работа по уеб програмиране - Информатика 2-ри курс. </div>
+	<div id="textboxInfo2"> Свободна кутия за текст </div>
+	<img src="images/backgrounds/avto.jpg" id="avto">
+</div>
+<div id="prodName"> Продукти </div>
+<div id="products">
+	<div id="here2"></div>
+	<div id="tableOfProducts">
+	<div id="cataImg1">
+
+	<div class="hovereffect">
+
+		<img src="images/backgrounds/catalogue1.jpg" class="CimageSize" >
+
+		<div class="overlay">
+			<h2>Сако</h2>
+			<p>
+				Цена: 69,99 лв.
+			</p>
+		</div>
+	</div>
+	</div>
+	<div id="cataImg2">
+	<div class="hovereffect">
+		<img src="images/backgrounds/catalogue2.jpg" class="CimageSize" >
+		<div class="overlay">
+			<h2>Дънков панталон</h2>
+			<p>
+				Цена: 59,99 лв.
+			</p>
+		</div>
+	</div>
+	</div>
+	<div id="cataImg3">
+	<div class="hovereffect">
+		<div class="promotion"> Промоция </div>
+		<img src="images/backgrounds/catalogue3.jpg" class="CimageSize" >
+		<div class="overlay">
+			<h2>Блейзър</h2>
+			<p>
+				<strike>Цена: 39,99 лв.</strike>
+				<br />
+				<br />
+				 Цена: <strong> 29,99 лв.</strong>
+			</p>
+		</div>
+	</div>
+	</div>
+	<div id="cataImg4">
+	<div class="hovereffect">
+		<img src="images/backgrounds/catalogue4.jpg" class="CimageSize" >
+		<div class="overlay">
+			<h2>Риза</h2>
+			<p>
+				Цена: 27,99 лв.
+			</p>
+		</div>
+	</div>
+	</div>
+</div>
+<div id="orderName"> Поръчка </div>
+<div id="order">
+	<div id="here3"></div>
+	<div id="poru4ka">
+		<form>
+			<table id="tablee" class="wow fadeInUp">
+				<tr>
+					<td>
+					Име: 
+					</td>
+					<td>
+					<input type="text" name="name" placeholder="Въведи име">
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Фамилия:
+					</td>
+					<td>
+					<input type="text" name="family" placeholder="Въведи фамилия">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Адрес: 
+					</td>
+					<td>
+					<input type="text" name="address" placeholder="Адрес за доставка">
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Продукт: 
+					</td>
+					<td>
+						<select>
+						<option>Сако</option>
+						<option>Дънков панталон</option>
+						<option>Блейзър</option>
+						<option>Риза</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Начин на плащане: 
+					</td>
+					<td>
+						<select>
+						<option>Наложен платеж</option>
+						<option>По банков път</option>
+						</select>
+					</td>
+				</tr>
+				<tr align="center">
+					<td colspan="2">
+						<input type="submit" name="submit" value="Поръчай">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</div>
+<div id="opinionName"> Препоръки и мнения </div>
+<div id="opinions">
+<img src="images/backgrounds/raise.png" id="raise">
+	<div id="here4"></div>
+	<img src="css/images/window.png" id="windowImg">
+	<div id="opinionForm">
+		<textarea id="textAreaPos" cols="25" rows="5"></textarea>
+		<br />
+		<input id="submitPos" type="submit" name="sub" value="Изпрати">
+	</div>
+	<div id="opLinks">
+		<a href="Uslovie-1.html">Задачи</a><br />
+		<a href="calculator.html">Калкулатор</a><br />
+		<a href="game.html">Игра</a><br />
+		<a href="gallery.html">Слайдър</a>
+	</div>
+</div>
+	<script>
+		var x = document.getElementById('myCanvas');
+		var content = x.getContext("2d");
+		content.font = "2em Arial";
+		content.fillStyle = "white";
+		content.strokeStyle = "white";
+		content.strokeText("I hate maths!", 25, 50);
+	</script>
+</body>
+</html>
